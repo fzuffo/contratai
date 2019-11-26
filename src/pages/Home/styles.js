@@ -9,15 +9,14 @@ export const Content = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 1440px;
-  margin-left: 30px;
+  max-width: 100%;
 
   /* ============section banner================== */
   #banner {
     display: flex;
-    background: url(${homeBanner}) no-repeat center;
-    background-size: auto auto;
-    width: 100vw;
+    background: url(${homeBanner}) no-repeat;
+    background-size: 100% auto;
+    width: 100%;
     height: 100vh;
     max-height: 691px;
   }
@@ -25,7 +24,8 @@ export const Content = styled.div`
   #find {
     display: flex;
     flex-direction: column;
-    width: 499px;
+    max-width: 499px;
+    width: 100%;
     height: 255px;
     margin-top: 170px;
     margin-left: 93px;
@@ -79,18 +79,17 @@ export const Content = styled.div`
   /* ============section services================== */
 
   #services {
-
     display: flex;
     justify-content: space-between;
     width: 100%;
   }
 
-
   #servicesTitle {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    max-width: 495px;
+    max-width: 341px;
+    width: 100%;
     margin-right: 67px;
   }
 
@@ -112,141 +111,416 @@ export const Content = styled.div`
   }
 
   #galleryServices {
-    width: 1009px;
+    width: auto;
     height: 338px;
-    /* border: 1px solid #d3e; */
+    margin-left: 6px;
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 
     .effectStart {
+      position: absolute;
+      align-self: flex-start;
+      z-index: 1;
+
+      width: 149px;
+      height: 335px;
+      background: linear-gradient(
+        90deg,
+        #fcfcfc 37.83%,
+        rgba(255, 255, 255, 0) 100%
+      );
+    }
+
+    .effectEnd {
+      position: absolute;
+      align-self: flex-end;
+      z-index: 1;
+
+      width: 149px;
+      height: 335px;
+      background: linear-gradient(
+        270deg,
+        #fcfcfc 37.83%,
+        rgba(255, 255, 255, 0) 100%
+      );
+    }
+
+    #cardsScroll {
+      z-index: 0;
+      width: 945px;
+      height: 335px;
+      overflow-x: scroll;
+      box-shadow: 0px 11px 35px rgba(0, 0, 0, 0.05);
+      margin-left: 39px;
+      margin-top: 22px;
+      display: flex;
+      flex-direction: row;
+
+      .card-content {
+        width: 232.52px;
+        height: 282px;
+        margin-left: 20px;
+        background: #ffffff;
+        box-shadow: 0px 11px 35px rgba(22, 85, 149, 0.38);
+        border-radius: 10px;
+
+        img {
+          width: 233px;
+          height: 167.08px;
+          border-radius: 5px 5px 0px 0px;
+        }
+      }
+
+      #cardDivDescriptions {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      #cardTitle {
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 24px;
+
+        text-align: center;
+        letter-spacing: 0.285714px;
+
+        color: #2f80ed;
+        border-radius: 10px;
+      }
+
+      #cardDescription {
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 10px;
+        line-height: 13px;
+
+        text-align: center;
+        letter-spacing: 0.285714px;
+
+        color: #2f80ed;
+
+        opacity: 0.85;
+        border-radius: 10px;
+      }
+
+      #cardFromPrice {
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 10px;
+        line-height: 24px;
+
+        text-align: center;
+        letter-spacing: 0.285714px;
+
+        color: #2f80ed;
+        opacity: 0.75;
+        border-radius: 10px;
+      }
+
+      #priceDiv {
+        width: 92.57px;
+        height: 24px;
+        left: 90px;
+        top: 270px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background: #36c3fe;
+        border-radius: 5px;
+      }
+
+      #price {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 20px;
+
+        letter-spacing: -0.24px;
+
+        color: #ffffff;
+
+        border-radius: 5px;
+      }
+    }
+  }
+  /* ============section professionalStars================== */
+
+  #professionalStars {
+    margin-top: 26px;
+    display: flex;
+    width: 100%;
+    height: 425px;
+    background-color: rgba(54, 195, 254, 0.1);
+    /* background: #36c3fe; */
+  }
+
+  #professionalGallery {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 343px;
+    margin: 36px 60px;
+    /* border: 1px solid #d33; */
+  }
+
+  #professionalTitle {
+    font-weight: bold;
+    font-style: normal;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    color: #6592fe;
+  }
+
+  #galleryControl {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+
+  #professionalDiv {
+    display: flex;
+    max-width: 878px;
+    width: 100%;
+    height: 100%;
+    margin-top: 38px;
+    /* border: 1px solid #de3; */
+  }
+
+  #chevronAngle {
+    width: 64px;
+    height: 64px;
+  }
+
+  #professionalProfileDiv {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    width: 200px;
+    height: 100%;
+    /* border: 1px solid green; */
+
+    img {
+      width: 150px;
+      height: 150px;
+      border-radius: 100px;
+    }
+
+    #profissionalName {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 19px;
+      line-height: 28px;
+      text-align: center;
+
+      color: #6592fe;
+    }
+  }
+
+  #professionalLocation {
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 24px;
+      width: 24px;
+
+      svg {
+        align-self: center;
+        font-size: 20px;
+        color: #6592fe;
+      }
+    }
+
+    #profissionalCity {
+      font-family: 'Montserrat', sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 24px;
+      text-align: center;
+      color: #6592fe;
+
+      margin-left: 5px;
+    }
+  }
+
+  #professionalDescription {
+    display: flex;
+    flex-direction: column;
+    max-width: 648px;
+    width: 100%;
+
+    margin-left: 30px;
+    /* border: 1px solid green; */
+  }
+
+  #descriptionStars {
+    display: flex;
+    width: auto;
+    height: 40px;
+
+    .star {
+      font-size: 33px;
+      color: #cdbfff;
+    }
+
+    .star.check {
+      color: #fcc400;
+    }
+  }
+
+  #descriptionTitle {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+
+    color: #6592fe;
+  }
+
+  #descriptionDescription {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+
+    color: #6592fe;
+  }
+
+  /* ============section professionals================== */
+
+  #professionals {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    width: 100%;
+    height: auto;
+    background: #fff;
+  }
+
+  #professionalsTitle {
+    max-width: 732px;
+    margin-top: 80px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+
+    color: #6592fe;
+  }
+
+  #professionalsGallery {
+    width: 100%;
+    height: 205px;
+    margin-top: 26px;
+
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+  }
+
+  #professionalsEffectStart {
     position: absolute;
     align-self: flex-start;
     z-index: 1;
 
-    width: 149px;
-    height: 335px;
-    background: linear-gradient(90deg, #FCFCFC 37.83%, rgba(255, 255, 255, 0) 100%);
+    width: 169px;
+    height: 220px;
+    background: linear-gradient(
+      90deg,
+      #ffffff 37.83%,
+      rgba(255, 250, 250, 0) 100%
+    );
   }
 
-  .effectEnd {
+  #professionalsEffectEnd {
     position: absolute;
     align-self: flex-end;
     z-index: 1;
 
-    width: 149px;
-    height: 335px;
-    background: linear-gradient(270deg, #FCFCFC 37.83%, rgba(255, 255, 255, 0) 100%);
+    width: 169px;
+    height: 220px;
+    background: linear-gradient(
+      270deg,
+      #ffffff 37.83%,
+      rgba(255, 239, 239, 0) 100%
+    );
+  }
+  #professionalsCard-content {
+    display: flex;
+
+    width: 142px;
+    height: 190px;
+    margin-left: 27px;
+
+    border: 1px solid #000;
   }
 
-  #cardsScroll {
-    z-index: 0;
-    width: 945px;
-    height: 335px;
-    overflow-x: scroll;
-    box-shadow: 0px 11px 35px rgba(0, 0, 0, 0.05);
-    margin-left: 39px;
+  #professionalImageDiv {
     display: flex;
-    flex-direction: row;
+    justify-content: center;
+    width: 142px;
+    height: 142px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08);
 
-    .card-content {
-      width: 232.52px;
-      height: 282px;
-      margin-left: 20px;
-      background: #FFFFFF;
-      box-shadow: 0px 11px 35px rgba(22, 85, 149, 0.38);
+    img {
+      object-fit: cover;
+      overflow: hidden;
+      width: 100%;
+      height: 100%;
       border-radius: 10px;
+      z-index: 0;
+    }
 
-      img {
-        width: 233px;
-        height: 167.08px;
-        border-radius: 5px 5px 0px 0px;
+    #profileJob {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: -3px;
+      align-self: flex-end;
+
+      background: #3b3db4;
+
+      border-radius: 4px;
+      width: 68px;
+      height: 21px;
+
+      position: absolute;
+      z-index: 1;
+
+      span {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 10px;
+        line-height: 20px;
+        letter-spacing: -0.24px;
+
+        color: #ffffff;
       }
     }
-
-    #cardDivDescriptions {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    #cardTitle {
-      font-family: 'Montserrat', sans-serif;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 20px;
-      line-height: 24px;
-
-      text-align: center;
-      letter-spacing: 0.285714px;
-
-      color: #2F80ED;
-      border-radius: 10px;
-    }
-
-    #cardDescription {
-      font-family: 'Montserrat', sans-serif;
-      font-style: normal;
-      font-weight: 500;
-      font-size: 10px;
-      line-height: 13px;
-
-      text-align: center;
-      letter-spacing: 0.285714px;
-
-      color: #2F80ED;
-
-      opacity: 0.85;
-      border-radius: 10px;
-    }
-
-    #cardFromPrice {
-      font-family: 'Montserrat', sans-serif;
-      font-style: normal;
-      font-weight: 500;
-      font-size: 10px;
-      line-height: 24px;
-
-      text-align: center;
-      letter-spacing: 0.285714px;
-
-      color: #2F80ED;
-      opacity: 0.75;
-      border-radius: 10px;
-
-    }
-
-    #priceDiv {
-      width: 92.57px;
-      height: 24px;
-      left: 90px;
-      top: 270px;
-
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-      background: #36C3FE;
-      border-radius: 5px;
-
-    }
-
-    #price {
-      font-style: normal;
-      font-weight: 500;
-      font-size: 12px;
-      line-height: 20px;
-
-
-
-      letter-spacing: -0.24px;
-
-      color: #FFFFFF;
-
-      border-radius: 5px;
-
-    }
   }
 
-
+  #blog {
+    margin-top: 41px;
+  }
 `;

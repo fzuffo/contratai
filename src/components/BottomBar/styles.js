@@ -11,7 +11,7 @@ export const Content = styled.div`
   align-items: center;
 
   margin: 0 29px 0 42px;
-  max-width: 1440px;
+  max-width: 100%;
   height: 94px;
 
   div {

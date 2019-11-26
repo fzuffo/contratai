@@ -18,6 +18,8 @@ export default createGlobalStyle`
 
   html, body, #root {
     height: auto;
+
+
   }
 
   body{
