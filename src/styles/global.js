@@ -3,6 +3,7 @@ import 'react-perfect-scrollbar/dist/css/styles.css';
 import 'react-toastify/dist/ReactToastify.css';
 
 export default createGlobalStyle`
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
 
   * {
     margin: 0;
@@ -16,7 +17,7 @@ export default createGlobalStyle`
   }
 
   html, body, #root {
-    height:100%;
+    height: auto;
   }
 
   body{
@@ -24,11 +25,13 @@ export default createGlobalStyle`
   }
 
   body, input, button{
-    font: 16px Helvetica;
+    font: 16px;
+    font-family: 'Poppins', sans-serif;
   }
 
   a {
     text-decoration: none;
+    font-family: 'Poppins', sans-serif;
   }
 
   ul {
