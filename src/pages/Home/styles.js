@@ -270,7 +270,6 @@ export const Content = styled.div`
     width: 100%;
     height: 343px;
     margin: 36px 60px;
-    /* border: 1px solid #d33; */
   }
 
   #professionalTitle {
@@ -295,7 +294,6 @@ export const Content = styled.div`
     width: 100%;
     height: 100%;
     margin-top: 38px;
-    /* border: 1px solid #de3; */
   }
 
   #chevronAngle {
@@ -310,7 +308,6 @@ export const Content = styled.div`
 
     width: 200px;
     height: 100%;
-    /* border: 1px solid green; */
 
     img {
       width: 150px;
@@ -368,7 +365,6 @@ export const Content = styled.div`
     width: 100%;
 
     margin-left: 30px;
-    /* border: 1px solid green; */
   }
 
   #descriptionStars {
@@ -434,14 +430,22 @@ export const Content = styled.div`
     margin-top: 26px;
 
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  #professionalsCardScroll {
+    display: flex;
     flex-direction: row;
-    /* justify-content: space-between; */
+    justify-content: space-between;
+    z-index: 0;
+    overflow-x: auto;
   }
 
   #professionalsEffectStart {
     position: absolute;
     align-self: flex-start;
-    z-index: 1;
+    z-index: 3;
 
     width: 169px;
     height: 220px;
@@ -455,33 +459,35 @@ export const Content = styled.div`
   #professionalsEffectEnd {
     position: absolute;
     align-self: flex-end;
-    z-index: 1;
+    z-index: 3;
 
     width: 169px;
     height: 220px;
     background: linear-gradient(
-      270deg,
+      90deg,
       #ffffff 37.83%,
       rgba(255, 239, 239, 0) 100%
     );
+    transform: rotate(180deg);
   }
+
   #professionalsCard-content {
     display: flex;
+    flex-direction: column;
 
     width: 142px;
     height: 190px;
-    margin-left: 27px;
-
-    border: 1px solid #000;
+    margin-left: 20px;
   }
 
   #professionalImageDiv {
     display: flex;
     justify-content: center;
-    width: 142px;
+    width: 100%;
     height: 142px;
     border-radius: 10px;
     box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08);
+    position: relative;
 
     img {
       object-fit: cover;
@@ -520,7 +526,125 @@ export const Content = styled.div`
     }
   }
 
+  #professionalName {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 6px 0 5px 0;
+
+    span {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 20px;
+
+      display: flex;
+      align-items: center;
+      text-align: center;
+      letter-spacing: -0.24px;
+
+      color: #085380;
+    }
+  }
+
+  #professionalDetails {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  #professionalRating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 68px;
+    height: 21px;
+    background: #5c5dac;
+    border-radius: 4px;
+    margin-right: 4px;
+
+    .star {
+      margin: 0;
+      font-size: 12px;
+      color: #cdbfff;
+    }
+
+    .star.check {
+      color: #f8e71c;
+    }
+  }
+
+  #professionalPrice {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 68px;
+    height: 21px;
+    background: #3178c6;
+    border-radius: 4px;
+
+    span {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 10px;
+      line-height: 20px;
+
+      display: flex;
+      align-items: center;
+      letter-spacing: -0.24px;
+
+      color: #ffffff;
+    }
+  }
+
   #blog {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 664px;
     margin-top: 41px;
+    background: linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0.9),
+        rgba(255, 255, 255, 0.9)
+      ),
+      linear-gradient(103.7deg, #1682c5 20.1%, #91d5ff 80.74%);
+  }
+
+  #blogTitle {
+    margin-top: 44px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+
+    color: #415b78;
+  }
+
+  #blogContent {
+    max-width: 100%;
+    height: 497px;
+    margin: 23px 101px 0 101px;
+    border: 1px solid #d33;
+  }
+
+  #blogCard {
+    width: 390px;
+    height: 497px;
+    border: 1px solid #d33;
+  }
+
+  #blogImgDiv {
+    width: 100%;
+    height: 274.3px;
+    border: 1px solid #d33;
+
+    img {
+      max-width: 100%;
+      max-height: 100%;
+    }
   }
 `;

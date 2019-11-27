@@ -9,6 +9,7 @@ import BottomBar from '~/components/BottomBar';
 import services1 from '~/assets/services1.png';
 import profissionalProfilePic from '~/assets/profissionalProfilePic.png';
 import profissionalProfilePic2 from '~/assets/profissionalProfilePic2.png';
+import blog1 from '~/assets/blog1.png';
 
 import { Container, Content } from './styles';
 
@@ -199,22 +200,380 @@ export default function Home() {
             para te ajudar
           </span>
           <div id="professionalsGallery">
-            {/* <div id="professionalsEffectStart" /> */}
+            <div id="professionalsCardScroll">
+              <div id="professionalsEffectStart" />
 
-            <div id="professionalsCard-content">
-              <div id="professionalImageDiv">
-                <img src={profissionalProfilePic2} alt="" />
+              <div id="professionalsCard-content">
+                <div id="professionalImageDiv">
+                  <img src={profissionalProfilePic2} alt="" />
 
-                <div id="profileJob">
-                  <span>Mecânica</span>
+                  <div id="profileJob">
+                    <span>Mecânica</span>
+                  </div>
+                </div>
+                <div id="professionalName">
+                  <span>Felipe Tavares</span>
+                </div>
+                <div id="professionalDetails">
+                  <div id="professionalRating">
+                    <span className="star check">
+                      <MdStar />
+                    </span>
+                    <span className="star check">
+                      <MdStar />
+                    </span>
+                    <span className="star check">
+                      <MdStar />
+                    </span>
+                    <span className="star check">
+                      <MdStar />
+                    </span>
+                    <span className="star">
+                      <MdStar />
+                    </span>
+                  </div>
+                  <div id="professionalPrice">
+                    <span>R$ 10 / hora</span>
+                  </div>
+                </div>
+              </div>
+              <div id="professionalsCard-content">
+                <div id="professionalImageDiv">
+                  <img src={profissionalProfilePic2} alt="" />
+
+                  <div id="profileJob">
+                    <span>Mecânica</span>
+                  </div>
+                </div>
+                <div id="professionalName">
+                  <span>Felipe Tavares</span>
+                </div>
+                <div id="professionalDetails">
+                  <div id="professionalRating">
+                    <span className="star check">
+                      <MdStar />
+                    </span>
+                    <span className="star check">
+                      <MdStar />
+                    </span>
+                    <span className="star check">
+                      <MdStar />
+                    </span>
+                    <span className="star check">
+                      <MdStar />
+                    </span>
+                    <span className="star">
+                      <MdStar />
+                    </span>
+                  </div>
+                  <div id="professionalPrice">
+                    <span>R$ 10 / hora</span>
+                  </div>
+                </div>
+              </div>
+              <div id="professionalsCard-content">
+                <div id="professionalImageDiv">
+                  <img src={profissionalProfilePic2} alt="" />
+
+                  <div id="profileJob">
+                    <span>Mecânica</span>
+                  </div>
+                </div>
+                <div id="professionalName">
+                  <span>Felipe Tavares</span>
+                </div>
+                <div id="professionalDetails">
+                  <div id="professionalRating">
+                    <span className="star check">
+                      <MdStar />
+                    </span>
+                    <span className="star check">
+                      <MdStar />
+                    </span>
+                    <span className="star check">
+                      <MdStar />
+                    </span>
+                    <span className="star check">
+                      <MdStar />
+                    </span>
+                    <span className="star">
+                      <MdStar />
+                    </span>
+                  </div>
+                  <div id="professionalPrice">
+                    <span>R$ 10 / hora</span>
+                  </div>
+                </div>
+              </div>
+
+              <div id="professionalsCard-content">
+                <div id="professionalImageDiv">
+                  <img src={profissionalProfilePic2} alt="" />
+
+                  <div id="profileJob">
+                    <span>Mecânica</span>
+                  </div>
+                </div>
+                <div id="professionalName">
+                  <span>Felipe Tavares</span>
+                </div>
+                <div id="professionalDetails">
+                  <div id="professionalRating">
+                    <span className="star check">
+                      <MdStar />
+                    </span>
+                    <span className="star check">
+                      <MdStar />
+                    </span>
+                    <span className="star check">
+                      <MdStar />
+                    </span>
+                    <span className="star check">
+                      <MdStar />
+                    </span>
+                    <span className="star">
+                      <MdStar />
+                    </span>
+                  </div>
+                  <div id="professionalPrice">
+                    <span>R$ 10 / hora</span>
+                  </div>
+                </div>
+              </div>
+
+              <div id="professionalsCard-content">
+                <div id="professionalImageDiv">
+                  <img src={profissionalProfilePic2} alt="" />
+
+                  <div id="profileJob">
+                    <span>Mecânica</span>
+                  </div>
+                </div>
+                <div id="professionalName">
+                  <span>Felipe Tavares</span>
+                </div>
+                <div id="professionalDetails">
+                  <div id="professionalRating">
+                    <span className="star check">
+                      <MdStar />
+                    </span>
+                    <span className="star check">
+                      <MdStar />
+                    </span>
+                    <span className="star check">
+                      <MdStar />
+                    </span>
+                    <span className="star check">
+                      <MdStar />
+                    </span>
+                    <span className="star">
+                      <MdStar />
+                    </span>
+                  </div>
+                  <div id="professionalPrice">
+                    <span>R$ 10 / hora</span>
+                  </div>
+                </div>
+              </div>
+
+              <div id="professionalsCard-content">
+                <div id="professionalImageDiv">
+                  <img src={profissionalProfilePic2} alt="" />
+
+                  <div id="profileJob">
+                    <span>Mecânica</span>
+                  </div>
+                </div>
+                <div id="professionalName">
+                  <span>Felipe Tavares</span>
+                </div>
+                <div id="professionalDetails">
+                  <div id="professionalRating">
+                    <span className="star check">
+                      <MdStar />
+                    </span>
+                    <span className="star check">
+                      <MdStar />
+                    </span>
+                    <span className="star check">
+                      <MdStar />
+                    </span>
+                    <span className="star check">
+                      <MdStar />
+                    </span>
+                    <span className="star">
+                      <MdStar />
+                    </span>
+                  </div>
+                  <div id="professionalPrice">
+                    <span>R$ 10 / hora</span>
+                  </div>
+                </div>
+              </div>
+
+              <div id="professionalsCard-content">
+                <div id="professionalImageDiv">
+                  <img src={profissionalProfilePic2} alt="" />
+
+                  <div id="profileJob">
+                    <span>Mecânica</span>
+                  </div>
+                </div>
+                <div id="professionalName">
+                  <span>Felipe Tavares</span>
+                </div>
+                <div id="professionalDetails">
+                  <div id="professionalRating">
+                    <span className="star check">
+                      <MdStar />
+                    </span>
+                    <span className="star check">
+                      <MdStar />
+                    </span>
+                    <span className="star check">
+                      <MdStar />
+                    </span>
+                    <span className="star check">
+                      <MdStar />
+                    </span>
+                    <span className="star">
+                      <MdStar />
+                    </span>
+                  </div>
+                  <div id="professionalPrice">
+                    <span>R$ 10 / hora</span>
+                  </div>
+                </div>
+              </div>
+
+              <div id="professionalsCard-content">
+                <div id="professionalImageDiv">
+                  <img src={profissionalProfilePic2} alt="" />
+
+                  <div id="profileJob">
+                    <span>Mecânica</span>
+                  </div>
+                </div>
+                <div id="professionalName">
+                  <span>Felipe Tavares</span>
+                </div>
+                <div id="professionalDetails">
+                  <div id="professionalRating">
+                    <span className="star check">
+                      <MdStar />
+                    </span>
+                    <span className="star check">
+                      <MdStar />
+                    </span>
+                    <span className="star check">
+                      <MdStar />
+                    </span>
+                    <span className="star check">
+                      <MdStar />
+                    </span>
+                    <span className="star">
+                      <MdStar />
+                    </span>
+                  </div>
+                  <div id="professionalPrice">
+                    <span>R$ 10 / hora</span>
+                  </div>
+                </div>
+              </div>
+
+              <div id="professionalsCard-content">
+                <div id="professionalImageDiv">
+                  <img src={profissionalProfilePic2} alt="" />
+
+                  <div id="profileJob">
+                    <span>Mecânica</span>
+                  </div>
+                </div>
+                <div id="professionalName">
+                  <span>Felipe Tavares</span>
+                </div>
+                <div id="professionalDetails">
+                  <div id="professionalRating">
+                    <span className="star check">
+                      <MdStar />
+                    </span>
+                    <span className="star check">
+                      <MdStar />
+                    </span>
+                    <span className="star check">
+                      <MdStar />
+                    </span>
+                    <span className="star check">
+                      <MdStar />
+                    </span>
+                    <span className="star">
+                      <MdStar />
+                    </span>
+                  </div>
+                  <div id="professionalPrice">
+                    <span>R$ 10 / hora</span>
+                  </div>
+                </div>
+              </div>
+
+              <div id="professionalsCard-content">
+                <div id="professionalImageDiv">
+                  <img src={profissionalProfilePic2} alt="" />
+
+                  <div id="profileJob">
+                    <span>Mecânica</span>
+                  </div>
+                </div>
+                <div id="professionalName">
+                  <span>Felipe Tavares</span>
+                </div>
+                <div id="professionalDetails">
+                  <div id="professionalRating">
+                    <span className="star check">
+                      <MdStar />
+                    </span>
+                    <span className="star check">
+                      <MdStar />
+                    </span>
+                    <span className="star check">
+                      <MdStar />
+                    </span>
+                    <span className="star check">
+                      <MdStar />
+                    </span>
+                    <span className="star">
+                      <MdStar />
+                    </span>
+                  </div>
+                  <div id="professionalPrice">
+                    <span>R$ 10 / hora</span>
+                  </div>
                 </div>
               </div>
             </div>
-            {/* <div id="professionalsEffectEnd" /> */}
+            <div id="professionalsEffectEnd" />
           </div>
         </section>
 
-        <section id="blog" />
+        <section id="blog">
+          <span id="blogTitle">BLOG</span>
+          <div id="blogContent">
+            <div id="blogCard">
+              <div id="blogImgDiv">
+                <img src={blog1} alt="" />
+              </div>
+              <div id="blogDescriptions">
+                <span id="blogDescriptionsTitle">Preparando o Ambiente</span>
+                <div id="blogDescriptionsStats">por felipe pintor 16</div>
+                <div id="blogDescriptionsDetails">
+                  Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum lorem ipsum
+                  Nullam ultricies urna id ornare interdum. Maecenas ut suscipit
+                  mauris, non sodales metus
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </Content>
       <BottomBar />
     </Container>
