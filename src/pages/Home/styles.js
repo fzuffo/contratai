@@ -598,6 +598,8 @@ export const Content = styled.div`
     }
   }
 
+  /* ============section blog================== */
+
   #blog {
     display: flex;
     justify-content: center;
@@ -625,26 +627,194 @@ export const Content = styled.div`
   }
 
   #blogContent {
+    display: flex;
+    justify-content: space-between;
     max-width: 100%;
     height: 497px;
     margin: 23px 101px 0 101px;
-    border: 1px solid #d33;
   }
 
   #blogCard {
+    display: flex;
+    flex-direction: column;
     width: 390px;
     height: 497px;
-    border: 1px solid #d33;
   }
 
   #blogImgDiv {
     width: 100%;
     height: 274.3px;
-    border: 1px solid #d33;
 
     img {
+      position: absolute;
       max-width: 100%;
       max-height: 100%;
+      z-index: 0;
     }
+  }
+
+  #blogDateDiv {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    width: 85px;
+    height: 83px;
+    margin: 20px;
+
+    z-index: 1;
+  }
+
+  #blogDate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 57px;
+    background: #36c3fe;
+
+    span {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 36px;
+      line-height: 42px;
+
+      display: flex;
+      align-items: center;
+      text-align: center;
+
+      color: #ffffff;
+    }
+  }
+
+  #blogMonth {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 26px;
+    background: #425b78;
+
+    span {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 42px;
+
+      display: flex;
+      align-items: center;
+      text-align: center;
+
+      color: #ffffff;
+    }
+  }
+
+  #blogDesc {
+    display: flex;
+    flex-direction: column;
+
+    padding-left: 37px;
+  }
+
+  #blogDescTitle {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 42px;
+
+    color: #001731;
+
+    opacity: 0.85;
+  }
+
+  #blogDescStats {
+    display: flex;
+    max-width: 278px;
+    justify-content: space-between;
+    margin-top: 5px;
+  }
+
+  #blogVector {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      margin-right: 3px;
+      max-width: 17px;
+      max-height: 17px;
+    }
+  }
+
+  #blogDescDetails {
+    max-width: 302px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 24px;
+    margin-top: 6px;
+
+    color: #001731;
+
+    opacity: 0.85;
+  }
+
+  /* ============section app================== */
+
+  #app {
+    display: flex;
+    width: 100%;
+    height: 569px;
+
+    background: linear-gradient(
+        180deg,
+        #rgba(0, 0, 0, 0.5) 0%,
+        rgba(208, 224, 231, 0.5) 100%
+      ),
+      #d0e0e7;
+  }
+
+  #appContent {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #appInfo {
+    display: flex;
+    flex-direction: column;
+    width: 603px;
+    height: 427px;
+
+    margin: 80px 93px;
+  }
+
+  #appQtd {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 42px;
+    /* or 117% */
+    text-align: center;
+
+    color: #6059f7;
+  }
+
+  #appDownloadText {
+    margin-top: 19.12px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 42px;
+
+    text-align: center;
+    color: #6059f7;
+
+    opacity: 0.5;
+  }
+
+  #appStores {
+    align-self: center;
+    margin-top: 49.3px;
+    width: 267px;
+    height: 166.03px;
   }
 `;

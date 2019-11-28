@@ -10,6 +10,11 @@ import services1 from '~/assets/services1.png';
 import profissionalProfilePic from '~/assets/profissionalProfilePic.png';
 import profissionalProfilePic2 from '~/assets/profissionalProfilePic2.png';
 import blog1 from '~/assets/blog1.png';
+import blogVectorAuthor from '~/assets/blogVectorAuthor.png';
+import blogVectorService from '~/assets/blogVectorService.png';
+import blogVectorComments from '~/assets/blogVectorComments.png';
+import appIconStores from '~/assets/appIconStores.png';
+import appSmartImage from '~/assets/appSmartImage.png';
 
 import { Container, Content } from './styles';
 
@@ -557,20 +562,133 @@ export default function Home() {
 
         <section id="blog">
           <span id="blogTitle">BLOG</span>
+
           <div id="blogContent">
+            {/* blogcard */}
             <div id="blogCard">
               <div id="blogImgDiv">
                 <img src={blog1} alt="" />
-              </div>
-              <div id="blogDescriptions">
-                <span id="blogDescriptionsTitle">Preparando o Ambiente</span>
-                <div id="blogDescriptionsStats">por felipe pintor 16</div>
-                <div id="blogDescriptionsDetails">
-                  Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum lorem ipsum
-                  Nullam ultricies urna id ornare interdum. Maecenas ut suscipit
-                  mauris, non sodales metus
+                <div id="blogDateDiv">
+                  <div id="blogDate">
+                    <span>22</span>
+                  </div>
+                  <div id="blogMonth">
+                    <span>Outubro</span>
+                  </div>
                 </div>
               </div>
+              <div id="blogDesc">
+                <span id="blogDescTitle">Preparando o Ambiente</span>
+                <div id="blogDescStats">
+                  <div id="blogVector">
+                    <img src={blogVectorAuthor} alt="" />{' '}
+                    <span>Por Felipe</span>
+                  </div>
+                  <div id="blogVector">
+                    <img src={blogVectorService} alt="" /> <span>Pintor</span>
+                  </div>
+                  <div id="blogVector">
+                    <img src={blogVectorComments} alt="" /> <span>16</span>
+                  </div>
+                </div>
+                <span id="blogDescDetails">
+                  Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum lorem ipsum
+                  Nullam ultricies urna id ornare interdum. Maecenas ut suscipit
+                  mauris, non sodales metus.
+                </span>
+              </div>
+            </div>
+
+            {/* blogcard */}
+            <div id="blogCard">
+              <div id="blogImgDiv">
+                <img src={blog1} alt="" />
+                <div id="blogDateDiv">
+                  <div id="blogDate">
+                    <span>22</span>
+                  </div>
+                  <div id="blogMonth">
+                    <span>Outubro</span>
+                  </div>
+                </div>
+              </div>
+              <div id="blogDesc">
+                <span id="blogDescTitle">Preparando o Ambiente</span>
+                <div id="blogDescStats">
+                  <div id="blogVector">
+                    <img src={blogVectorAuthor} alt="" />{' '}
+                    <span>Por Felipe</span>
+                  </div>
+                  <div id="blogVector">
+                    <img src={blogVectorService} alt="" /> <span>Pintor</span>
+                  </div>
+                  <div id="blogVector">
+                    <img src={blogVectorComments} alt="" /> <span>16</span>
+                  </div>
+                </div>
+                <span id="blogDescDetails">
+                  Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum lorem ipsum
+                  Nullam ultricies urna id ornare interdum. Maecenas ut suscipit
+                  mauris, non sodales metus.
+                </span>
+              </div>
+            </div>
+
+            {/* blogcard */}
+            <div id="blogCard">
+              <div id="blogImgDiv">
+                <img src={blog1} alt="" />
+                <div id="blogDateDiv">
+                  <div id="blogDate">
+                    <span>22</span>
+                  </div>
+                  <div id="blogMonth">
+                    <span>Outubro</span>
+                  </div>
+                </div>
+              </div>
+              <div id="blogDesc">
+                <span id="blogDescTitle">Preparando o Ambiente</span>
+                <div id="blogDescStats">
+                  <div id="blogVector">
+                    <img src={blogVectorAuthor} alt="" />{' '}
+                    <span>Por Felipe</span>
+                  </div>
+                  <div id="blogVector">
+                    <img src={blogVectorService} alt="" /> <span>Pintor</span>
+                  </div>
+                  <div id="blogVector">
+                    <img src={blogVectorComments} alt="" /> <span>16</span>
+                  </div>
+                </div>
+                <span id="blogDescDetails">
+                  Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum lorem ipsum
+                  Nullam ultricies urna id ornare interdum. Maecenas ut suscipit
+                  mauris, non sodales metus.
+                </span>
+              </div>
+            </div>
+            {/* blogcard */}
+          </div>
+        </section>
+
+        <section id="app">
+          <div id="appContent">
+            <div id="appInfo">
+              <span id="appQtd">
+                <strong>+ de 408.066 profissionais</strong> fazem parte da nossa
+                plataforma{' '}
+              </span>
+              <span id="appDownloadText">
+                Baixe o App e encontre profissionais qualificados na palma da
+                sua mão
+              </span>
+              <div id="appStores">
+                <img src={appIconStores} alt="" />
+              </div>
+            </div>
+            <div id="appSmartImage">
+              <img src={appSmartImage} alt="" />
             </div>
           </div>
         </section>
