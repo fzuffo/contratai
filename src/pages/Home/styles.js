@@ -254,25 +254,22 @@ export const Content = styled.div`
   }
   /* ============section professionalStars================== */
 
+  /* ============section carrousel================== */
+
   #professionalStars {
-    margin-top: 26px;
-    display: flex;
     width: 100%;
     height: 425px;
-    background-color: rgba(54, 195, 254, 0.1);
-    /* background: #36c3fe; */
+    background: rgba(54, 195, 254, 0.1);
   }
 
-  #professionalGallery {
+  #professionalStarsContent {
     display: flex;
-    align-items: center;
     flex-direction: column;
-    width: 100%;
-    height: 343px;
-    margin: 36px 60px;
+    height: 100%;
   }
 
   #professionalTitle {
+    margin-top: 36px;
     font-weight: bold;
     font-style: normal;
     font-size: 36px;
@@ -281,24 +278,11 @@ export const Content = styled.div`
     color: #6592fe;
   }
 
-  #galleryControl {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-  }
-
   #professionalDiv {
     display: flex;
     max-width: 878px;
-    width: 100%;
-    height: 100%;
-    margin-top: 38px;
-  }
-
-  #chevronAngle {
-    width: 64px;
-    height: 64px;
+    margin: 38px auto 0 auto;
+    height: 216px;
   }
 
   #professionalProfileDiv {
@@ -792,7 +776,7 @@ export const Content = styled.div`
     font-weight: 500;
     font-size: 36px;
     line-height: 42px;
-    /* or 117% */
+
     text-align: center;
 
     color: #6059f7;

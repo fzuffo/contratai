@@ -1,12 +1,13 @@
 import React from 'react';
+import Slider from 'infinite-react-carousel';
 
 import { MdSearch, MdLocationOn, MdStar } from 'react-icons/md';
-import { FaAngleLeft, FaAngleRight } from 'react-icons/fa';
 
 import Header from '~/components/Header';
 import BottomBar from '~/components/BottomBar';
 
 import services1 from '~/assets/services1.png';
+
 import profissionalProfilePic from '~/assets/profissionalProfilePic.png';
 import profissionalProfilePic2 from '~/assets/profissionalProfilePic2.png';
 import blog1 from '~/assets/blog1.png';
@@ -19,7 +20,11 @@ import appSmartImage from '~/assets/appSmartImage.png';
 import { Container, Content } from './styles';
 
 export default function Home() {
-  // function handleFind() {}
+  const settings = {
+    dots: true,
+    dotsScroll: 1,
+    initialSlide: 0,
+  };
 
   return (
     <Container>
@@ -143,59 +148,96 @@ export default function Home() {
         </section>
 
         <section id="professionalStars">
-          <div id="professionalGallery">
+          <div id="professionalStarsContent">
             <span id="professionalTitle">
               Os nossos profissionais são 5 estrelhas
             </span>
-            <div id="galleryControl">
-              <div className="chevronAngle">
-                <FaAngleLeft size={40} color="#6592FE" />
-              </div>
-
-              <div id="professionalDiv">
-                <div id="professionalProfileDiv">
-                  <img src={profissionalProfilePic} alt="" />
-                  <span id="profissionalName">Marcela Frias</span>
-                  <div id="professionalLocation">
-                    <div>
-                      <MdLocationOn />
+            <Slider {...settings}>
+              {/* new slide */}
+              <div>
+                <div id="professionalDiv">
+                  <div id="professionalProfileDiv">
+                    <img src={profissionalProfilePic} alt="" />
+                    <span id="profissionalName">Marcela Frias</span>
+                    <div id="professionalLocation">
+                      <div>
+                        <MdLocationOn />
+                      </div>
+                      <span id="profissionalCity">Araraquara,SP</span>
                     </div>
-                    <span id="profissionalCity">Araraquara,SP</span>
                   </div>
-                </div>
 
-                <div id="professionalDescription">
-                  <div id="descriptionStars">
-                    <span className="star check">
-                      <MdStar />
-                    </span>
-                    <span className="star check">
-                      <MdStar />
-                    </span>
-                    <span className="star check">
-                      <MdStar />
-                    </span>
-                    <span className="star check">
-                      <MdStar />
-                    </span>
-                    <span className="star check">
-                      <MdStar />
+                  <div id="professionalDescription">
+                    <div id="descriptionStars">
+                      <span className="star check">
+                        <MdStar />
+                      </span>
+                      <span className="star check">
+                        <MdStar />
+                      </span>
+                      <span className="star check">
+                        <MdStar />
+                      </span>
+                      <span className="star check">
+                        <MdStar />
+                      </span>
+                      <span className="star check">
+                        <MdStar />
+                      </span>
+                    </div>
+                    <span id="descriptionTitle">Titulo</span>
+                    <span id="descriptionDescription">
+                      Depoimento sobre o curso em questao, lorem ipsum lorem
+                      ipsum lorem ipsum lorem ipsum orem ipsum lorem ipsum lorem
+                      ipsum lorem ipsum orem ipsum lorem ipsum lorem ipsum lorem
+                      ipsum{' '}
                     </span>
                   </div>
-                  <span id="descriptionTitle">Titulo</span>
-                  <span id="descriptionDescription">
-                    Depoimento sobre o curso em questao, lorem ipsum lorem ipsum
-                    lorem ipsum lorem ipsum orem ipsum lorem ipsum lorem ipsum
-                    lorem ipsum orem ipsum lorem ipsum lorem ipsum lorem ipsum{' '}
-                  </span>
                 </div>
               </div>
-              <div className="chevronAngle">
-                <FaAngleRight size={40} color="#6592FE" />
+              {/* new slide */}
+              <div>
+                <div id="professionalDiv">
+                  <div id="professionalProfileDiv">
+                    <img src={profissionalProfilePic} alt="" />
+                    <span id="profissionalName">Marcela Frias</span>
+                    <div id="professionalLocation">
+                      <div>
+                        <MdLocationOn />
+                      </div>
+                      <span id="profissionalCity">Araraquara,SP</span>
+                    </div>
+                  </div>
+
+                  <div id="professionalDescription">
+                    <div id="descriptionStars">
+                      <span className="star check">
+                        <MdStar />
+                      </span>
+                      <span className="star check">
+                        <MdStar />
+                      </span>
+                      <span className="star check">
+                        <MdStar />
+                      </span>
+                      <span className="star check">
+                        <MdStar />
+                      </span>
+                      <span className="star check">
+                        <MdStar />
+                      </span>
+                    </div>
+                    <span id="descriptionTitle">Titulo</span>
+                    <span id="descriptionDescription">
+                      Depoimento sobre o curso em questao, lorem ipsum lorem
+                      ipsum lorem ipsum lorem ipsum orem ipsum lorem ipsum lorem
+                      ipsum lorem ipsum orem ipsum lorem ipsum lorem ipsum lorem
+                      ipsum{' '}
+                    </span>
+                  </div>
+                </div>
               </div>
-            </div>
-            <span id="ellipseControl"> o o o o </span>
-            {/* ----> create slider https://www.w3schools.com/howto/howto_js_slideshow.asp */}
+            </Slider>
           </div>
         </section>
 
