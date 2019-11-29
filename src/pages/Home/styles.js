@@ -283,7 +283,7 @@ export const Content = styled.div`
       height: 40px;
       background: url(${rightArrow}) no-repeat;
     }
-    /* ---end--- classes from lib react infiniti carousel */
+    /*  ---end--- classes from lib react infiniti carousel */
   }
 
   #professionalTitle {
