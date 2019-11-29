@@ -254,8 +254,6 @@ export const Content = styled.div`
   }
   /* ============section professionalStars================== */
 
-  /* ============section carrousel================== */
-
   #professionalStars {
     width: 100%;
     height: 425px;
@@ -266,6 +264,10 @@ export const Content = styled.div`
     display: flex;
     flex-direction: column;
     height: 100%;
+
+    button {
+      color: #000;
+    }
   }
 
   #professionalTitle {

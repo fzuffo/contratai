@@ -150,7 +150,7 @@ export default function Home() {
         <section id="professionalStars">
           <div id="professionalStarsContent">
             <span id="professionalTitle">
-              Os nossos profissionais são 5 estrelhas
+              Os nossos profissionais são 5 estrelas
             </span>
             <Slider {...settings}>
               {/* new slide */}
