@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 import homeBanner from '~/assets/homeBanner.png';
+import leftArrow from '~/assets/leftArrow.png';
+import rightArrow from '~/assets/rightArrow.png';
 
 export const Container = styled.div`
   background-color: #fff;
@@ -265,9 +267,23 @@ export const Content = styled.div`
     flex-direction: column;
     height: 100%;
 
-    button {
-      color: #000;
+    /* ---start--- classes from lib react infiniti carousel */
+    .carousel-prev {
+      margin-left: 80px;
     }
+    .carousel-next {
+      margin-right: 80px;
+    }
+
+    .carousel-prev:before {
+      height: 40px;
+      background: url(${leftArrow}) no-repeat;
+    }
+    .carousel-next:before {
+      height: 40px;
+      background: url(${rightArrow}) no-repeat;
+    }
+    /* ---end--- classes from lib react infiniti carousel */
   }
 
   #professionalTitle {
