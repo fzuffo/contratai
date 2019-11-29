@@ -56,7 +56,7 @@ export const Content = styled.div`
     width: 466.48px;
     height: 64.14px;
     background: #fff;
-
+    border: 1px solid #109cf1;
     box-sizing: border-box;
     border-radius: 10px;
 
@@ -68,6 +68,10 @@ export const Content = styled.div`
       font-size: 20px;
       line-height: 24px;
       color: #c2cfe0;
+
+      ::placeholder {
+        color: #c2cfe0;
+      }
     }
   }
 
