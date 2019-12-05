@@ -18,7 +18,9 @@ export default function Header() {
         </div>
         <div id="menuHeader">
           <div>
-            <img src={headerBlog} alt="" />
+            <Link to="/blog">
+              <img src={headerBlog} alt="" />
+            </Link>
           </div>
           <div>
             <img id="imgDoubts" src={headerDoubts} alt="" />

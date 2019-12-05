@@ -4,6 +4,8 @@ export const Container = styled.div`
   height: 60px;
   background-color: #6592fe;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  position: relative;
+  z-index: 10;
 `;
 
 export const Content = styled.div`
