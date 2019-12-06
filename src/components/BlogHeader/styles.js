@@ -17,11 +17,11 @@ export const Container = styled.div`
 
 
     background: url('${backgroundHeader}') no-repeat ;
-     opacity:0.95;
+    opacity:0.95;
     width: 100%;
     height: 117px;
 
-    background-size: 1440px 122px;
+    background-size: auto 122px;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
